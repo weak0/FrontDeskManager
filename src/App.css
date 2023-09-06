@@ -1,0 +1,28 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.App-header, .App-footer {
+  background-color: #111214;
+  padding: 10px 20px;
+}
+
+.desks {
+  flex-grow: 1;
+}
+.App-main {
+
+  display: flex;
+  flex-grow: 1; 
+  min-height: 0; 
+    
+}
+.App-header {
+ border-bottom: 1px solid black;
+}
+.App-footer{
+border-top: 1px solid black;
+color: #0263e8;
+}
+
