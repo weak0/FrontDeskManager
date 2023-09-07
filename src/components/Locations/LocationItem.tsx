@@ -1,9 +1,9 @@
-import '../Location.css'
-import { ILocation } from '../../../interfaces/ILocations'
-import { getDesks } from '../../../api/getDesks'
-import { IDesk } from '../../../interfaces/IDesk'
-import { useUserContext } from '../../context/UserContext'
-import { IUserContext } from '../../context/IUserContext'
+import './Location.css'
+import { ILocation } from './../../interfaces/ILocations'
+import { getDesks } from './../../api/getDesks'
+import { IDesk } from './../../interfaces/IDesk'
+import { useUserContext } from './../context/UserContext'
+import { IUserContext } from './../../interfaces/IUserContext'
 
 const LocationItem = ({ details, deskHandler }: { details: ILocation, deskHandler: (desks: IDesk[]) => void }) => {
 
@@ -19,6 +19,8 @@ const LocationItem = ({ details, deskHandler }: { details: ILocation, deskHandle
             alert(err)
         }
     }
+
+
 
     return (
         <div className='Location-Item' onClick={fetchDesks}>

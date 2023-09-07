@@ -30,7 +30,9 @@
     flex-direction: column;
 }
 .Reservations-p {
-    font-size: 14px
+    font-size: 14px;
+    display: block;
+    width: max-content;
 }
 .Reservations-button {
     margin-top: 10px;

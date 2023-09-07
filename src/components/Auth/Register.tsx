@@ -1,14 +1,14 @@
 import { useState } from "react"
 import styles from './register.module.css'
 import { emailValidation, comparePasswords } from './validation/validationUtils'
-import { IRegisterDto } from "./IRegisterDto";
+import { IRegisterDto } from "../../interfaces/IRegisterDto";
 import { postRegister } from "../../api/postRegister";
 
 const Register = ({ newUserHandler }: { newUserHandler: () => void }) => {
     const [firstName, setFirstName] = useState<string>('');
     const [lastName, setLastName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
-    const [email2, setEmail2] = useState<string>(''); 
+    const [email2, setEmail2] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [password2, setPassword2] = useState<string>('');
 
@@ -28,7 +28,7 @@ const Register = ({ newUserHandler }: { newUserHandler: () => void }) => {
 
 
     const handleRegister = async () => {
-        const value : IRegisterDto = {firstName, lastName, email, confirmEmail: email2, password, confirmPassword: password2};
+        const value: IRegisterDto = { firstName, lastName, email, confirmEmail: email2, password, confirmPassword: password2 };
         console.log(value);
         try {
             await postRegister(value);
@@ -37,7 +37,7 @@ const Register = ({ newUserHandler }: { newUserHandler: () => void }) => {
         catch (e) {
             alert(e);
         }
-        
+
     }
 
 

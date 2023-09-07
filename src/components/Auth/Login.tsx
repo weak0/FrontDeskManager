@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import styles from './register.module.css'
-import { emailValidation} from './validation/validationUtils'
+import { emailValidation } from './validation/validationUtils'
 import { postLogin } from '../../api/postLogin';
 import { useUserContext } from '../context/UserContext';
-import { IUserContext } from '../context/IUserContext';
+import { IUserContext } from '../../interfaces/IUserContext';
 
 const Login = ({ newUserHandler }: { newUserHandler: () => void }) => {
 

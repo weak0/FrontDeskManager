@@ -3,6 +3,7 @@
 }
 .Desks-tittle {
     font-weight: bold;
+    margin-top: 10px;
 }
 .Desks-list {
     list-style: none;
@@ -10,6 +11,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .Desks-list-li {
     text-align: center;

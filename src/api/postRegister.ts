@@ -1,4 +1,4 @@
-import { IRegisterDto } from "../components/Auth/IRegisterDto";
+import { IRegisterDto } from "../interfaces/IRegisterDto";
 import { connectionString } from "../config";
 
 export const postRegister = async (value: IRegisterDto) => {

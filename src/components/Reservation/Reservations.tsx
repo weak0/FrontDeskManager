@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import { IUserContext } from '../context/IUserContext';
+import { IUserContext } from '../../interfaces/IUserContext';
 import { getYoursReservation } from '../../api/getYoursReservation';
 import { useUserContext } from '../context/UserContext';
 import { IReservation } from '../../interfaces/IReservation';
 import "./Reservations.css"
-import ReservationItem from './ReservationItem/ReservationItem';
+import ReservationItem from './ReservationItem';
 
 
 const Reservations = () => {

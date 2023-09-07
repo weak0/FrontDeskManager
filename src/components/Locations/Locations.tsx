@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react'
 import './Location.css'
 import { getLocatons } from '../../api/getLocations'
 import { ILocation } from '../../interfaces/ILocations'
-import LocationItem from './LocationItem/LocationItem'
+import LocationItem from './LocationItem'
 import { IDesk } from '../../interfaces/IDesk'
 import { useUserContext } from '../context/UserContext'
-import { IUserContext } from '../context/IUserContext'
+import { IUserContext } from '../../interfaces/IUserContext'
 
 const Locations = ({ deskHandler }: { deskHandler: (desks: IDesk[]) => void }) => {
 

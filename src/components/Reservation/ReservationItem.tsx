@@ -1,9 +1,9 @@
-import { IReservation } from '../../../interfaces/IReservation'
-import { cancelReservation } from '../../../api/deleteReservation'
-import { useUserContext } from '../../context/UserContext'
-import { IUserContext } from '../../context/IUserContext';
+import { IReservation } from './../../interfaces/IReservation'
+import { cancelReservation } from './../../api/deleteReservation'
+import { useUserContext } from './../context/UserContext'
+import { IUserContext } from './../../interfaces/IUserContext';
 
-const ReservationItem = ({ data }: { data: IReservation}) => {
+const ReservationItem = ({ data }: { data: IReservation }) => {
 
     const ctx: IUserContext = useUserContext();
 

@@ -6,9 +6,10 @@ import { faPeopleRoof } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import { IDesk } from './interfaces/IDesk'
 import { useUserContext } from './components/context/UserContext'
-import { IUserContext } from './components/context/IUserContext'
+import { IUserContext } from './interfaces/IUserContext'
 import Reservations from './components/Reservation/Reservations'
 import Auth from './components/Auth/Auth'
+import AdminPanel from './components/AdminPanel/AdminPanel'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <h1 className="header-tittle"><FontAwesomeIcon icon={faPeopleRoof} color='white' /> Desk Manager</h1>
+          <h1 className="header-tittle"><FontAwesomeIcon icon={faPeopleRoof} color='#0263e8' /> Desk Manager</h1>
         </header>
         <main className="App-main">
           {context.userId == 0 ? <Auth /> :
@@ -30,6 +31,7 @@ function App() {
               </section>
               <section className="App-section desks">
                 <Desks desks={desks} />
+                <AdminPanel />
               </section>
               <section className="App-section reservations">
                 <Reservations />

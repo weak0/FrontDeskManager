@@ -1,5 +1,5 @@
 import { IDesk } from "../../interfaces/IDesk"
-import DesksItem from "./DesksItem/DesksItem"
+import DesksItem from "./DesksItem"
 import './Desks.css';
 
 export const Desks = ({ desks }: { desks: IDesk[] }) => {

@@ -1,0 +1,49 @@
+.AdminPanel {
+    background-color: #111214;
+}
+.AdminPanel button {
+    padding: 5px 10px;
+    border-color: white ;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.AdminPanel-nav {
+    padding: 10px 20px;
+    background-color: #0263e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-form {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+.admin-form input {
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border: 1px solid #0263e8;
+    border-radius: 5px;
+    width: 100px;
+ 
+}
+.admin-list {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-action {
+    border: 1px solid #0263e8;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
