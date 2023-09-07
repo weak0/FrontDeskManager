@@ -1,8 +1,7 @@
-import { adminToken, connectionString, userToken } from "../config";
-import { ILocation } from "../interfaces/ILocations";
+import { adminToken, connectionString } from '../config.ts'
 
-export const getLocatons = async (token: string): Promise<ILocation[]> => {
-    const response = await fetch(`${connectionString}/locations`, {
+export const getYoursReservation = async (userId: number, token: string) => {
+    const response = await fetch(`${connectionString}/reservations/${userId}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -16,6 +15,7 @@ export const getLocatons = async (token: string): Promise<ILocation[]> => {
         throw new Error(data);
     }
     const data = await response.json();
-
     return data;
+
 }
+

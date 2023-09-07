@@ -1,0 +1,22 @@
+.MakeReservation { 
+    width: 100%;
+}
+
+.Reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Reservation-form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Reservation-form label {
+    font-weight: normal;
+}
+.Reservation-form input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}

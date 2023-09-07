@@ -1,15 +1,16 @@
-import { IDesk } from "./IDesk";
-import { connectionString, userToken } from "./config";
+import { IDesk } from "../interfaces/IDesk";
+import { adminToken, connectionString } from "../config";
 
-export const getDesks = async (locationId : number) : Promise<IDesk[]> => { 
+export const getDesks = async (locationId: number, token: string): Promise<IDesk[]> => {
     const response = await fetch(`${connectionString}/desks/locations/${locationId}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": userToken,
+            // "Authorization":"Bearer "+token,
+            "Authorization": adminToken
         },
     });
-    
+
     if (!response.ok) {
         const data = await response.text();
         throw new Error(data);

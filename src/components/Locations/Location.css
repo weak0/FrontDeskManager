@@ -1,8 +1,11 @@
+.locations {
+    background-color: #111214;
+    border-right: 1px solid black;
+}
+
 .Locations {
     background-color: #111214;
-    height: 100%;
     padding: 20px 0px;
-    border-right: 1px solid black;
     overflow-y: auto;
 }
 .Locations-tittle {

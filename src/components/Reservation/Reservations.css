@@ -1,0 +1,51 @@
+.reservations {
+    background-color: #111214;
+    border-left: 1px solid black
+}
+
+.Reservations {
+    
+    padding: 20px ;
+    overflow-y: auto;
+}
+.Reservation-tittle {
+    text-align: center;
+    font-weight: bold;
+
+}
+.Reservations-list {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+.Reservations-Item {
+    
+    background-color: #111214;
+    border: 2px solid #0263e8;
+    padding: 15px 25px;
+    margin: 15px 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+.Reservations-p {
+    font-size: 14px
+}
+.Reservations-button {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: block;
+    transition: 0.3s;
+
+}
+.Reservations-button:hover {
+    background-color: black;
+    color: white;
+    border-color: red;
+}

@@ -1,0 +1,75 @@
+.Desks {
+    padding: 10px 20px;
+}
+.Desks-tittle {
+    font-weight: bold;
+}
+.Desks-list {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Desks-list-li {
+    text-align: center;
+    font-weight: bold;
+}
+.Desks-Item {
+    background-color: #1a1b1d;
+    border: 2px solid #0263e8;
+    padding: 15px 25px;
+    margin: 15px 15px;
+    box-shadow: 0 0 10px 2px black;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+}
+.Desks-available {
+    background-color: green;
+}
+
+.Desks-unavailable {
+    background-color: red;
+}
+.Desks-status {
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+}
+.Desks-Item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+    width: 100%;
+}
+.Desks-Item-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Reservation-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.Reservation-Item {
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    border: 1px solid #0263e8;
+    padding: 10px;
+    
+    
+}

@@ -26,3 +26,19 @@ border-top: 1px solid black;
 color: #0263e8;
 }
 
+button {
+  background-color: #0263e8;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  display: block;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  border-color: #0263e8;
+}
+
