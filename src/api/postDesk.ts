@@ -1,4 +1,4 @@
-import { adminToken, connectionString } from "../config"
+import { connectionString } from "../config"
 
 
 export const postDesk = async (locationId: number, token: string) => {
@@ -6,8 +6,7 @@ export const postDesk = async (locationId: number, token: string) => {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            // "Authohrization": `Bearer ${token}`
-            "Authorization": adminToken
+            "Authohrization": `Bearer ${token}`
         }
     })
     if (!response.ok) {

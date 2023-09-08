@@ -1,4 +1,4 @@
-import { adminToken, connectionString } from "../config";
+import {connectionString } from "../config";
 import { ICreateReservation } from "../interfaces/ICreateReservation";
 
 export const postReservation = async (reservation: ICreateReservation, token: string, deskId : number) => {
@@ -6,8 +6,7 @@ export const postReservation = async (reservation: ICreateReservation, token: st
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            // "Authorization": `Bearer ${token}`
-            "Authorization": adminToken
+            "Authorization": `Bearer ${token}`
         },
         body: JSON.stringify(reservation)})
 

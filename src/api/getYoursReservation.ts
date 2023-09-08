@@ -1,12 +1,11 @@
-import { adminToken, connectionString } from '../config.ts'
+import {connectionString } from '../config.ts'
 
 export const getYoursReservation = async (userId: number, token: string) => {
     const response = await fetch(`${connectionString}/reservations/${userId}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            // "Authorization":"Bearer "+token,
-            "Authorization": adminToken
+            "Authorization":"Bearer "+token,
         },
     });
 

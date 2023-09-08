@@ -1,10 +1,11 @@
 import { connectionString } from "../config";
 
-export const postLogin = async (email: string, password: string): Promise<string> => {
+export const postLogin = async (email: string, password: string, token :string): Promise<string> => {
     const response = await fetch(`${connectionString}/auth/login`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
+            "Authorization":"Bearer "+token
         },
         body: JSON.stringify({
             email: email,

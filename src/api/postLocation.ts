@@ -1,4 +1,4 @@
-import { adminToken, connectionString } from "../config";
+import { connectionString } from "../config";
 import { ICreateLocation } from "../interfaces/ICreateLocation";
 
 export const postLocation = async (location: ICreateLocation, token : string) => {
@@ -7,8 +7,7 @@ export const postLocation = async (location: ICreateLocation, token : string) =>
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            // "Authorization": `Bearer ${token}`
-            "Authorization": adminToken,
+            "Authorization": `Bearer ${token}`
         },
         body: JSON.stringify(location)
     });

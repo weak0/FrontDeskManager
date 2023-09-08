@@ -1,4 +1,4 @@
-import { adminToken, connectionString } from "../config";
+import { connectionString } from "../config";
 
 export const cancelReservation = async (reservationId: number, token: string) => {
 
@@ -6,8 +6,7 @@ export const cancelReservation = async (reservationId: number, token: string) =>
     const response = await fetch(`${connectionString}/reservations/${reservationId}`, {
         method: "DELETE",
         headers: {
-            "Authorization": adminToken
-            // "Authorization": "Bearer " + token 
+            "Authorization": "Bearer " + token 
         },
 
     });

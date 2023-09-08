@@ -1,4 +1,4 @@
-import { adminToken, connectionString, userToken } from "../config";
+import { connectionString } from "../config";
 import { ILocation } from "../interfaces/ILocations";
 
 export const getLocatons = async (token: string): Promise<ILocation[]> => {
@@ -6,8 +6,7 @@ export const getLocatons = async (token: string): Promise<ILocation[]> => {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            // "Authorization":"Bearer "+token,
-            "Authorization": adminToken
+            "Authorization":"Bearer "+token,
         },
     });
 

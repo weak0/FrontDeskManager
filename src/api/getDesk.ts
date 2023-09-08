@@ -1,4 +1,4 @@
-import { adminToken, connectionString } from "../config"
+import { connectionString } from "../config"
 import { IDesk } from "../interfaces/IDesk"
 
 export const getDesk = async (id: number, token : string): Promise<IDesk> => {
@@ -6,8 +6,7 @@ export const getDesk = async (id: number, token : string): Promise<IDesk> => {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            // 'Authorization': `Bearer ${token}`
-            "Authorization": adminToken
+            'Authorization': `Bearer ${token}`
         },
     })
 

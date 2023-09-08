@@ -6,6 +6,8 @@
 .App-header, .App-footer {
   background-color: #111214;
   padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .desks {
@@ -23,6 +25,14 @@
 }
 .App-footer{
 border-top: 1px solid black;
+display: flex;
+justify-content: space-between;
+}
+.App-footer a {
+  color: white;
+  text-decoration: underline;
+  margin-left: 15px;
+
 }
 
 button {

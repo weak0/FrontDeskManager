@@ -17,11 +17,13 @@ function App() {
   const context: IUserContext = useUserContext();
 
 
+
   return (
     <>
       <div className="App">
         <header className="App-header">
           <h1 className="header-tittle"><FontAwesomeIcon icon={faPeopleRoof} color='#0263e8' /> Desk Manager</h1>
+          <button onClick={() => window.location.reload()}>Logout</button>
         </header>
         <main className="App-main">
           {context.userId == 0 ? <Auth /> :
@@ -31,7 +33,7 @@ function App() {
               </section>
               <section className="App-section desks">
                 <Desks desks={desks} />
-                <AdminPanel />
+               {context.isAdmin && <AdminPanel />}
               </section>
               <section className="App-section reservations">
                 <Reservations />
@@ -40,7 +42,13 @@ function App() {
           }
         </main>
         <footer className="App-footer">
+          <div>
           <p className="footer-description">Created by maciej.gorzela89@gamil.com</p>
+          </div>
+          <div>
+           <a href="https://github.com/weak0/DeskManager">Backend</a>
+           <a href="https://github.com/weak0/FrontDeskManager">Frontend</a>
+           </div>
         </footer>
       </div>
     </>

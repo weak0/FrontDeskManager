@@ -3,7 +3,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
 import { RotateProp } from "@fortawesome/fontawesome-svg-core"
 import { useUserContext } from "../../context/UserContext"
-import { changeLocatioDesk } from "../../../api/changeLocationDesks"
+
 import { unactiveDesk } from "../../../api/unactiveDesk"
 
 const UnactiveDeskAdmin = () => {

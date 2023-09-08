@@ -15,7 +15,7 @@ export const UserContext: React.Context<any> = createContext( {
 
  export const UserContextProvider = ({children} : {children : React.ReactNode}) => {
     const [userEmail, setUserEmail] = useState<string>();
-    const [userId, setUserId] = useState<number>(1);
+    const [userId, setUserId] = useState<number>(0);
     const [isAdmin, setIsAdmin] = useState<boolean>();
     const [token, setToken] = useState<any>();
     const [reolad, setReload] = useState<boolean>(false)
