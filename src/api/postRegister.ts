@@ -1,12 +1,11 @@
 import { IRegisterDto } from "../interfaces/IRegisterDto";
 import { connectionString } from "../config";
 
-export const postRegister = async (value: IRegisterDto, token : string) => {
+export const postRegister = async (value: IRegisterDto) => {
     const response = await fetch(`${connectionString}/auth/register`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization":"Bearer "+token
         },
         body: JSON.stringify({
             firstName: value.firstName,
